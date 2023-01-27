@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carregando...</title>
+    <style>
+
+        body {
+            height: 98vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        div#circulo {
+            height: 200px;
+            width: 200px;
+            border: 20px solid rgb(209, 209, 209);
+            border-radius: 50%;
+            border-right-color:  black;
+            animation:  spin 1s infinite;
+            margin: 0px auto;
+        }
+
+        p {
+            font-family: "Poppins";
+            display: block;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        @keyframes spin {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="circulo"></div>
+    <p>Carregando...</p>
+    <script>
+        window.addEventListener("load", function() {
+            window.location.replace("pag-inicial.html")
+        })
+    </script>
+</body>
+</html>
