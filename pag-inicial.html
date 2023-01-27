@@ -4,10 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Motorola</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="imagens/logo-vetor.png" type="image/x-icon">
 </head>
-<body>
-    
+<body onresize="mudouTamanho()">
+    <header>
+        <div class="logo"><img src="imagens/logo-vetor.png" alt=""></div>
+        <h1>MOTOROLA</h1>
+            <i id="menuIcone" class="material-icons burguer" onclick="clickMenu()" style="display: block;">menu</i>
+        <menu id="menuBar">
+            <ul>
+                <li>Produtos</li>
+                <li>Contato</li>
+                <li>Sobre Nós</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <h1 class="titulo-principal">Seu futuro está aqui.</h1>
+        <div class="texto-principal">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Vestibulum ullamcorper porttitor blandit. Nullam
+                ultrices pulvinar augue in blandit. Morbi ac finibus
+                turpis, vel varius ipsum. Vestibulum vitae nisl eu nisi
+                hendrerit sollicitudin sit amet in libero. In dui magna,
+                rhoncus nec interdum sit amet, dapibus eu erat.</p>
+                <button>COMPRAR</button>
+        </div>
+        <div class="imagem-cel">           
+            <img src="imagens/celular.png" alt="Celular Motorola">
+        </div>
+    </main>
+    <footer>
+        <div class="imagem-flex"><img src="imagens/anatel-logo.png" alt="Logo da ANATEL"></div>
+        <div class="imagem-flex"><img src="imagens/logo-vetor.png" alt="Logo da Motorola"></div>
+        <div class="imagem-flex"><img src="imagens/governo-logo.png" alt="Logo do Governo da República do Brasil"></div>
+        <div>
+            <p>Nulla in ligula est. Curabitur porta, nunc nec euismod tempor, odio metus viverra nunc, ut eleifend augue sem ultricies lacus. Sed nisl nisl, vestibulum ut risus
+                eget, pretium euismod ante. Nunc sed tristique nisi. Etiam pulvinar, mauris et porttitor vestibulum, tellus tellus ullamcorper eros, a vehicula sem nibh eget
+                augue</p>
+        </div>
+    </footer>
 </body>
+<script src="./javascript.js"></script>
 </html>

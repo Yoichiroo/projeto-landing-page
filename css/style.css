@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;700&display=swap');
+
+:root {
+    --corPrincipal: #1B174D;
+    --corSecundaria: #685AFB;
+    --corTerciaria: #230FFA;
+}
+
+* {
+    font-family: 'Inter Tight';
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: var(--corPrincipal);
+    color: white;
+    padding: 10px;
+}
+
+div.logo {
+    color: white;
+}
