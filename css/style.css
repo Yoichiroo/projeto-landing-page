@@ -30,11 +30,13 @@ header {
     background-color: var(--corPrincipal);
     color: white;
     padding: 10px;
+    box-shadow: 0px  0px 10px rgba(0, 0, 0, 0.877);
 }
 
 header h1 {
     font-family: 'Poppins';
     font-weight: bold;
+    cursor: default;
 }
 
 div.logo img{
@@ -43,6 +45,7 @@ div.logo img{
 
 i#menuIcone {
     font-size: 2em;
+    cursor: pointer;
 }
 
 div.logo {
@@ -56,19 +59,20 @@ aside#menuBar{
     position: fixed;
     background-color: #221d5f;
     color: white;
-    box-shadow: 40px 40px 500px black;
+    box-shadow: 0px 10px 100px black;
     text-align: center;
+    z-index: 4;
 }
 
 aside#menuBar div {
     position: absolute;
-    top: 0px;
+    top: 10px;
     left: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0.589);
     width: 50px;
     height: 50px;
     text-align: center;
@@ -77,17 +81,38 @@ aside#menuBar div {
 }
 
 aside#menuBar div:hover {
-    background-color: black;
+    background-color: rgb(119, 3, 3);
+}
+
+section.tela-preta {
+    display: block;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.651);
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
 }
 
 ul {
-    margin: 20px;
+    width: 100%;
     list-style-type: none;
+    margin: 20px 0px;
 }
 
 ul li {
-    margin: 20px;
+    width: 100%;
+    margin: 0px;
     line-height: 4em;
+    font-size: 1.2em,;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .2s;
+}
+
+ul li:hover {
+    background-color: #beb8fd;
+    color: black;
 }
 
 main {
@@ -113,10 +138,16 @@ main button {
     margin: 10px auto;
     border-radius: 50px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
-    background-color: var(--corPrincipal);
+    background-color: #2a2466;
     color: white;
     font-weight: bolder;
     font-size: 2em;
+    transition: .2s;
+    cursor: pointer;
+}
+
+main button:hover {
+    background-color: #332b86;
 }
 
 main h1.titulo-principal {
@@ -135,10 +166,25 @@ main div.texto-principal {
 footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     background-color: var(--corPrincipal);
     color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin: 20px 0px;
+    box-shadow: 0px  0px 10px rgba(0, 0, 0, 0.877);
+}
+footer div.imagem-flex  img{
+    width: 80px;
+    margin: 5px;
 }
 
-footer div.imagem-flex {
+footer div.motorola img{
+    width: 20px;
+}
 
+footer p {
+    font-size: 0.5em;
 }
