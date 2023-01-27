@@ -3,7 +3,7 @@
 
 :root {
     --corPrincipal: #1B174D;
-    --corSecundaria: #685AFB;
+    --corSecundaria: #beb8fd;
     --corTerciaria: #230FFA;
 }
 
@@ -17,14 +17,128 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: #e6e4ff;
 }
 
 header {
+    position: sticky;
+    top: -1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--corPrincipal);
     color: white;
     padding: 10px;
 }
 
+header h1 {
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+div.logo img{
+    width: 50px;
+}
+
+i#menuIcone {
+    font-size: 2em;
+}
+
 div.logo {
     color: white;
+}
+
+aside#menuBar{
+    display: none;
+    width: 50vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #221d5f;
+    color: white;
+    box-shadow: 40px 40px 500px black;
+    text-align: center;
+}
+
+aside#menuBar div {
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.39);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+    transition: .2s;
+}
+
+aside#menuBar div:hover {
+    background-color: black;
+}
+
+ul {
+    margin: 20px;
+    list-style-type: none;
+}
+
+ul li {
+    margin: 20px;
+    line-height: 4em;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main div.imagem-cel {
+    margin: auto;
+}
+
+main div.imagem-cel img {
+    width: 90vw;
+}
+
+main button {
+    display: block;
+    border: none;
+    width: 90vw;
+    height: 10vh;
+    margin: 10px auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.308);
+    background-color: var(--corPrincipal);
+    color: white;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+main h1.titulo-principal {
+    font-weight: bold;
+    font-family: 'Poppins';
+    font-size: 3em;
+    text-align: center;
+}
+
+main div.texto-principal {
+    font-size: 1.2em;
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--corPrincipal);
+    color: white;
+}
+
+footer div.imagem-flex {
+
 }
