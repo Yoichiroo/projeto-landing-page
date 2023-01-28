@@ -21,3 +21,9 @@ function fecharMenu() {
     }
 }
 
+window.addEventListener("resize", function() {
+    if (window.innerWidth <= 320) {
+        window.location.replace("incompativel.html")
+    }
+})
+
