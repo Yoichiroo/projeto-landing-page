@@ -1,0 +1,46 @@
+@media screen and (min-width: 512px) {
+    aside#menuBar div {
+        left: 300px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    aside#menuBar div {
+        left: 400px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    aside#menuBar div {
+        left: 580px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    aside#menuBar div {
+        left: 780px;
+    }
+    main {
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    main div.imagem-cel {
+        width: 50vw;
+    }
+
+    main div.imagem-cel img {
+        width: 100%;
+    }
+
+    main div.texto-principal {
+        width: 50vw;
+    }
+
+    main div.texto-principal button {
+        width: 50%;
+    }
+
+}
